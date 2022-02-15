@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">test_multi</string>
+    <string name="multiplica_nandroid">Multiplica\nAndroid</string>
+    <string name="txt_error">Upss!! no se encontró la letra</string>
+</resources>
