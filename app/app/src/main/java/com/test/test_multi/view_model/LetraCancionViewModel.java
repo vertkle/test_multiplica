@@ -39,7 +39,6 @@ public class LetraCancionViewModel extends AndroidViewModel {
     public LiveData<LetraCancionPOJO> getLetraLiveData(){
         return letraLiveData;
     }
-
     public LiveData<List<ArtistaCancionPOJO>>getArtistasLD(){
         return artistasLD;
     }

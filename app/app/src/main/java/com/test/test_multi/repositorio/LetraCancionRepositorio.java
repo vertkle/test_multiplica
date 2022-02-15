@@ -26,13 +26,13 @@ public class LetraCancionRepositorio {
         letraCancionLD = new MutableLiveData<>();
         artistaLD = new MutableLiveData<>();
         lista = new ArrayList<>();
-        lista.add(new ArtistaCancionPOJO("Enrique Iglesias","Por Amarte"));lista.add(new ArtistaCancionPOJO("Enrique Iglesias","Experiencia Religiosa"));
-        lista.add(new ArtistaCancionPOJO("Bad Bunny","Yonaguni"));lista.add(new ArtistaCancionPOJO("Bad Bunny","Te Mudaste"));
-        lista.add(new ArtistaCancionPOJO("Juan Gabriel","Querida"));lista.add(new ArtistaCancionPOJO("ozuna","se preparo"));
-        lista.add(new ArtistaCancionPOJO("wisin","vacaciones"));lista.add(new ArtistaCancionPOJO("reik","sabes"));
-        lista.add(new ArtistaCancionPOJO("reik","yo quisiera"));lista.add(new ArtistaCancionPOJO("luis miguel","no se tu"));
-        lista.add(new ArtistaCancionPOJO("daddy yankee","dura"));lista.add(new ArtistaCancionPOJO("daddy yankee","problema"));
-        lista.add(new ArtistaCancionPOJO("cristian castro","no podras"));lista.add(new ArtistaCancionPOJO("cristian castro","es mejor asi"));
+        lista.add(new ArtistaCancionPOJO("Elvis Crespo","Suavemente"));lista.add(new ArtistaCancionPOJO("Aventura","Obsesion"));
+        lista.add(new ArtistaCancionPOJO("Bad Bunny","Yonaguni"));lista.add(new ArtistaCancionPOJO("Rosalia","Malamente"));
+        lista.add(new ArtistaCancionPOJO("Juan Gabriel","Querida"));lista.add(new ArtistaCancionPOJO("Ricardo Arjona","Mujeres"));
+        lista.add(new ArtistaCancionPOJO("Wisin","Vacaciones"));lista.add(new ArtistaCancionPOJO("Reik","Sabes"));
+        lista.add(new ArtistaCancionPOJO("Roberto Carlos","Amigo"));lista.add(new ArtistaCancionPOJO("luis miguel","no se tu"));
+        lista.add(new ArtistaCancionPOJO("Daddy Yankee","Dura"));lista.add(new ArtistaCancionPOJO("Luis Fonsi","Despacito"));
+        lista.add(new ArtistaCancionPOJO("Enrique Iglesias","Bailando"));lista.add(new ArtistaCancionPOJO("Daddy Yankee","Gasolina"));
     }
 
     public LiveData<LetraCancionPOJO>getLetraCancion(String artista,String cancion){

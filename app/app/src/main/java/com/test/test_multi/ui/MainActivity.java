@@ -5,6 +5,7 @@ import androidx.core.graphics.drawable.RoundedBitmapDrawable;
 import androidx.lifecycle.AndroidViewModel;
 import androidx.lifecycle.ViewModelProviders;
 
+import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
@@ -17,6 +18,7 @@ import android.widget.Toast;
 import com.google.gson.GsonBuilder;
 import com.test.test_multi.R;
 import com.test.test_multi.databinding.ActivityMainBinding;
+import com.test.test_multi.utils.Constantes;
 import com.test.test_multi.view_model.LetraCancionViewModel;
 
 import retrofit2.converter.gson.GsonConverterFactory;
@@ -74,10 +76,14 @@ public class MainActivity extends AppCompatActivity {
     }
     private void seleccionarLetra(){
         binding.txtArtistas.setOnItemClickListener((adapterView, view, i, l) -> {
+
+
             binding.txtArtistas.setText("");
             String item[] = adapterView.getItemAtPosition(i).toString().split("-");
             nomCancion = adapterView.getItemAtPosition(i).toString();
             viewModel.buscar_cancion(item[0].trim(),item[1].trim());
+            Constantes.hideKeyboard(this);
+
 
         });
     }
